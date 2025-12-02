@@ -32,7 +32,8 @@ export const phases = [
                 tools: [
                     { name: "Ahrefs", url: "https://ahrefs.com/" },
                     { name: "SimilarWeb", url: "https://www.similarweb.com/" },
-                    { name: "SEMrush", url: "https://www.semrush.com/" }
+                    { name: "SEMrush", url: "https://www.semrush.com/" },
+                    { name: "Google Alert", url: "https://www.google.com/alerts" }
                 ]
             }
         ]
