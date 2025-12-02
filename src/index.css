@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-geek-bg: #050505;
+  --color-geek-card: #0f0f0f;
+  --color-geek-border: #27272a;
+  --color-geek-primary: #00ff9d;
+  --color-geek-secondary: #bd93f9;
+  --color-geek-accent: #ff79c6;
+  --color-geek-dim: #71717a;
+
+  --image-grid-pattern: linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px);
+}
+
+body {
+    background-color: var(--color-geek-bg);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, #121212 1px, transparent 1px), linear-gradient(to bottom, #121212 1px, transparent 1px);
+    color: #d1d5db; /* text-gray-300 */
+}
+
+.glass-card {
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glow-hover:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.1);
+    border-color: var(--color-geek-primary);
+}
+
+.tool-tag {
+    transition: all 0.2s ease;
+}
+
+.tool-tag:hover {
+    transform: translateY(-2px);
+    color: #fff;
+}
