@@ -8,7 +8,12 @@ const Header = () => {
                     <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
                         <span className="text-geek-primary font-mono">&gt;</span> Indie Dev <span className="text-geek-dim">Global Toolkit</span>
                     </h1>
-                    <p className="text-geek-dim font-mono text-sm md:text-base mt-2">独立开发出海工具合集 & 黄金时间分配法则</p>
+                    <p className="text-geek-dim font-mono text-sm md:text-base mt-2">
+                        独立开发出海工具合集 & 黄金时间分配法则
+                        <a href="/exam.html" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
+                            Take Exam &gt;
+                        </a>
+                    </p>
                 </div>
 
                 <div className="w-full md:w-1/3 flex flex-col gap-2">

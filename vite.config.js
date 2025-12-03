@@ -5,7 +5,13 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        exam: 'exam.html',
+      },
+    },
   },
   plugins: [
     react(),
