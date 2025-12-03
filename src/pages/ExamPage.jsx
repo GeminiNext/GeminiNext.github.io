@@ -225,7 +225,11 @@ const ExamPage = () => {
                     <div className="flex items-center gap-3">
                         <span className={`font-mono text-xl font-bold ${accentColor}`}>&gt;</span>
                         <h1
-                            onClick={() => {}}
+                            onClick={() => {
+                                setExamStatus('intro');
+                                setQuestions([]);
+                                setCurrentQuestionIndex(0);
+                            }}
                             className="text-xl md:text-2xl font-bold tracking-tight font-mono cursor-pointer hover:opacity-80 transition-opacity"
                         >
                             AI Trainer <span className={`text-sm px-2 py-0.5 rounded border ${isDarkMode ? "border-[#bd93f9]/30 text-[#bd93f9]" : "border-purple-200 text-purple-600"}`}>Lvl.3</span>
@@ -416,15 +420,21 @@ const ExamPage = () => {
                                 Previous
                             </button>
                             {mode === 'practice' ? (
+                                // <button
+                                //     onClick={() => {
+                                //         setExamStatus('intro');
+                                //         setQuestions([]);
+                                //         setCurrentQuestionIndex(0);
+                                //     }}
+                                //     className={`px-6 py-2 rounded-lg font-bold ${isDarkMode ? "bg-[#bd93f9] text-black" : "bg-purple-600 text-white"}`}
+                                // >
+                                //     返回主页
+                                // </button>
                                 <button
-                                    onClick={() => {
-                                        setExamStatus('intro');
-                                        setQuestions([]);
-                                        setCurrentQuestionIndex(0);
-                                    }}
-                                    className={`px-6 py-2 rounded-lg font-bold ${isDarkMode ? "bg-[#bd93f9] text-black" : "bg-purple-600 text-white"}`}
+                                    onClick={nextQuestion}
+                                    className={`px-6 py-2 rounded-lg ${buttonClasses}`}
                                 >
-                                    返回主页
+                                    Next
                                 </button>
                             ) : currentQuestionIndex === questions.length - 1 ? (
                                 <button
