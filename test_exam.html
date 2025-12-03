@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Exam</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module">
+        // Test if data can be loaded
+        import questionBank from '/src/data/question_bank_clean.json';
+        console.log('Question bank loaded:', questionBank);
+        console.log('Sections:', questionBank.sections);
+        
+        // Try to import the component
+        import ExamPage from '/src/pages/ExamPage.jsx';
+        console.log('ExamPage component:', ExamPage);
+        
+        // Test React
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+        console.log('React:', React);
+        console.log('ReactDOM:', ReactDOM);
+        
+        try {
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(React.createElement(ExamPage));
+            console.log('Rendered successfully!');
+        } catch (error) {
+            console.error('Render error:', error);
+            document.getElementById('root').innerHTML = '<h1 style="color:red">Error: ' + error.message + '</h1><pre>' + error.stack + '</pre>';
+        }
+    </script>
+</body>
+</html>

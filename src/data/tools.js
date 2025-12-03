@@ -73,6 +73,13 @@ export const phases = [
                 ]
             },
             {
+                icon: "🎓",
+                title: "AI Training",
+                tools: [
+                    { name: "AI训练师3级考试", url: "/exam", internal: true }
+                ]
+            },
+            {
                 icon: "🛡️",
                 title: "基础与安全",
                 tools: [

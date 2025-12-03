@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ToolCard = ({ icon, title, tools }) => {
     return (
@@ -9,13 +10,25 @@ const ToolCard = ({ icon, title, tools }) => {
             </div>
             <div className="flex flex-wrap gap-2">
                 {tools.map((tool, index) => (
-                    <a
-                        key={index}
-                        href={tool.url}
-                        className="tool-tag px-3 py-1 bg-white/5 border border-white/10 rounded text-sm hover:bg-geek-secondary/20 hover:border-geek-secondary block"
-                    >
-                        {tool.name}
-                    </a>
+                    tool.internal ? (
+                        <Link
+                            key={index}
+                            to={tool.url}
+                            className="tool-tag px-3 py-1 bg-white/5 border border-white/10 rounded text-sm hover:bg-geek-secondary/20 hover:border-geek-secondary block"
+                        >
+                            {tool.name}
+                        </Link>
+                    ) : (
+                        <a
+                            key={index}
+                            href={tool.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="tool-tag px-3 py-1 bg-white/5 border border-white/10 rounded text-sm hover:bg-geek-secondary/20 hover:border-geek-secondary block"
+                        >
+                            {tool.name}
+                        </a>
+                    )
                 ))}
             </div>
         </div>
