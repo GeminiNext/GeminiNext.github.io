@@ -10,7 +10,7 @@ const Header = () => {
                     </h1>
                     <p className="text-geek-dim font-mono text-sm md:text-base mt-2">
                         独立开发出海工具合集 & 黄金时间分配法则
-                        <a href="/exam.html" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
+                        <a href="/exam" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
                             Take Exam &gt;
                         </a>
                     </p>
