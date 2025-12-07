@@ -1,0 +1,979 @@
+[
+    {
+        "id": "1",
+        "title": "连环画（考察多角度多人物多动作的一致性）",
+        "description": "连环画（考察多角度多人物多动作的一致性）",
+        "content": "帮我生成一个8页的连环画，给2岁半的小朋友讲故事用，用中英文标出简短对话，主角是一只斑马和一只大象的故事，需要多角度展现主角，保持主角的一致性",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "1_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "2",
+        "title": "信息图",
+        "description": "信息图",
+        "content": "帮我把一下内容生成信息图，我要分享到X的，尽量炫酷好看些。“你的内容”",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "2_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "3",
+        "title": "珠海手账图",
+        "description": "珠海手账图",
+        "content": "生成中国珠海的旅游指南，要求手账形式，画面要纯中文。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "3_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "4",
+        "title": "古诗句配图",
+        "description": "古诗句配图",
+        "content": "1、给以下古诗词配图：接天莲叶无穷碧、映日荷花别样红2、我将为您生成这首古诗词\"争渡争渡、惊起一滩鸥鹭\"的配图。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "4_1.png",
+            "4_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "5",
+        "title": "游戏界面",
+        "description": "游戏界面",
+        "content": "1、帮我生成英雄联盟的游戏界面，中路大头正在清理兵线",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "5_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "7",
+        "title": "海报",
+        "description": "海报",
+        "content": "我要举办一场活动，主题为“AI赋能发明创新”，时间为2025年11月20日上午10点，地点在北京体育中心，请帮我画一张宣传海报，要求有科技感。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "7_1.png",
+            "7_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "8",
+        "title": "古诗句配图",
+        "description": "古诗句配图",
+        "content": "请为“采菊东篱下，悠然见南山。”这首诗配图。\n\n请你为《滕王阁序》配图，要求描述当时王勃作诗的场景。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "8_1.png",
+            "8_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "9",
+        "title": "人物关系图",
+        "description": "人物关系图",
+        "content": "画出《百年孤独》中的重要人物关系图，用中文表示关系。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "9_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "10",
+        "title": "智能手环爆炸图",
+        "description": "智能手环爆炸图",
+        "content": "请仿照这个风格，帮我生成智能穿戴手环的爆照图",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "10_0.png",
+            "10_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "11",
+        "title": "手稿页",
+        "description": "手稿页",
+        "content": "请为《滕王阁序》生成一个古老的手稿页，有星星和旁注的墨水图，书页风格",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "11_1.png",
+            "11_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "12",
+        "title": "产品原型图",
+        "description": "产品原型图",
+        "content": "我想开发一款类似于“小宇宙”的APP，请你帮我画个原型图，所有要求均符合APP原型图标准。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "12_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "13",
+        "title": "科普插画",
+        "description": "科普插画",
+        "content": "用一个科普插画解释为什么原神改变了中国国产游戏生态，文字用中文",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "13_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "14",
+        "title": "数据大屏",
+        "description": "数据大屏",
+        "content": "你帮我做一个新能源虚拟电厂的数据大屏，我要给领导展示的。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "14_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "15",
+        "title": "PPT",
+        "description": "PPT",
+        "content": "我想做一页PPT，关于AI Agent的应用场景，你自行帮我设计一下，要求科技主题的。文字为中文",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "15_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "16",
+        "title": "条漫",
+        "description": "条漫",
+        "content": "做一些具有教育意义的条漫，使用中文，讲清赤壁之战，图文信息丰富。（阿真）",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "16_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "17",
+        "title": "八部金刚功功夫图",
+        "description": "八部金刚功功夫图",
+        "content": "最近在学八部金刚功，让特朗普用中文图解的方式教下我",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "17_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "18",
+        "title": "漫画-串场",
+        "description": "漫画-串场",
+        "content": "帮我生成动漫角色中的女角色的一个合集故事，其中包括娜美、罗宾、，小樱、雏田、松本乱菊，做成彩色漫画的形式，要求中文",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "18_1.png",
+            "18_2.png",
+            "nb2-lovart-24.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "19",
+        "title": "拍照截图",
+        "description": "拍照截图",
+        "content": "帮我解一下这一道题，要有详细步骤，中文手写样式展示",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "19_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "20",
+        "title": "彩色玻璃窗风格",
+        "description": "彩色玻璃窗风格",
+        "content": "Prompt: “A saintly figure and soaring doves in jewel-tone panes, stained glass window style.”",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "20_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "21",
+        "title": "书页/手稿页风格",
+        "description": "书页/手稿页风格",
+        "content": "Prompt: “An aged manuscript page with ink diagrams of stars and marginalia, book page style.”",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "21_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "22",
+        "title": "现实科幻融合",
+        "description": "现实科幻融合",
+        "content": "Prompt: “A barista with cybernetic eyes steaming milk in a chrome café, human realism sci-fi.”",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "22_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "23",
+        "title": "科研绘图",
+        "description": "科研绘图",
+        "content": "【托敏版】工程示意图绘制需求（通用版）\n总体要求\n\n画面类型：工程技术示意图，学术出版级别，黑白线稿为主，简洁专业风格\n\n整体布局：横向构图，A4纸横向（297mm×210mm），分为上中下三层，垂直分层清晰\n\n画风要求：\n\n工程制图风格，类似系统架构图\n\n线条清晰，黑白灰为主\n\n避免花哨装饰，强调功能性\n\n类似教科书或专利文献中的插图\n\n【上层】物理设备层（顶部1/3区域）\n背景\n\n浅灰色背景（F8F8F8），明显与中下层区分\n\n左上角标注文字：\"物理设备层\"（黑色，加粗，9号字）\n\n主要元素：5个基础架构节点\n\n节点排列：\n\n从左到右均匀分布5个节点\n\n编号为 N1、N2、N3、N4、N5（在底部标注）\n\n间距相等，呈一字排开\n\n节点绘制细节（每个节点结构相同）：\n\n主体结构（侧视图轮廓）：\n底座：梯形，宽度约12mm\n中段：梯形，宽度收窄至8mm\n顶部：三角形尖顶\n总高度约35mm\n黑色实线边框，线宽0.8pt\n白色填充（无阴影）\n状态标识：\n\nN1, N2（正常状态）：白色填充，黑色边框，无特殊标记\n\nN3（异常状态）：白色填充+密集斜线填充（///），中心有红色大×符号，边框稍粗（1.2pt）\n\nN4, N5（关注状态）：白色填充+点状填充（...），中心有橙色感叹号!，边框标准粗细（1.0pt）\n\n关键细节：多点传感器\n\n每个节点配置3个传感器组件：\n\n位置分布（以N3为例）：\n组件1：高度25%处，右侧\n组件2：高度55%处，左侧\n组件3：高度85%处，右侧\n绘制样式：小圆圈（直径3mm），浅蓝色填充+黑色细边框，用细虚线连接到主体\n传感器标注：在每个节点顶部上方3mm处，标注文字：\"3×Sensors\"（7号字，斜体，灰色）\n\n物理连接\n\n主连接线：连接相邻节点顶部，悬链线形状（自然下垂），三条平行线，黑色实线，线宽0.5pt\n\n辅助线：在主连接线下方的悬链线，黑色虚线，线宽0.4pt\n\n重要标注\n\n异常标注：从N3指向左下方的红色箭头，文字：\"节点3异常\"（红色，8号字）\n\n关注标注：从N4指向右下方的橙色箭头，文字：\"相邻节点关注\"（橙色，8号字）\n\n提示框（右上角）\n\n黄色浅色框，内容：\"多点位部署\\n(分布实施)\"，7号斜体\n\n【中层】数据汇聚层（中部1/3区域）\n背景\n\n白色背景（FFFFFF）\n\n左侧标注：\"数据汇聚层\"（黑色，加粗，9号字）\n\n主要元素：3个处理模块\n\n模块1（左）：数据网关\n\n位置x=60mm，圆角矩形，文字：\"数据采集\\n网关\"\n\n模块2（中）：核心模型\n\n位置x=140mm，圆角矩形，文字：\"核心模型\\nCoreModel\"（中英文）\n\n模块3（右）：数据库\n\n位置x=220mm，圆柱体（数据库图标），文字：\"历史数据库\\nDB\"\n\n数据流连接\n\n采集流：左侧节点群（N1,N2）→数据网关（淡蓝色虚线，透明度40%）\n\n异常流：中间异常节点（N3）→核心模型（红色粗虚线，醒目）\n\n关注流：右侧关注节点（N4,N5）→核心模型（橙色虚线）\n\n模块间：网关→核心模型→数据库（均为蓝色虚线箭头，水平连接）\n\n【下层】分析决策层（底部1/3区域）\n背景\n\n浅灰色背景（F0F0F0）\n\n左侧标注：\"分析决策层\"（黑色，加粗，9号字）\n\n主要元素：4步骤流程图\n\n从左到右排列4个圆角矩形框：\n\n步骤1：\"① 异常检测\" (AnomalyDetection)\n\n步骤2：\"② 结构分析\" (StructureAnalysis)\n\n步骤3：\"③ 影响评估\" (ImpactAssessment)\n\n步骤4：\"④ 联动响应\" (LinkageResponse)\n\n流程箭头\n\n步骤1→2：红色实线，标注\"传递\"\n\n步骤2→3：橙色实线，标注\"范围\"\n\n步骤3→4：橙色实线，标注\"信号\"\n\n跨层连接\n\n中层\"核心模型\" → 下层\"结构分析\"（蓝色虚线斜向下）\n\n中层\"数据库\" → 下层\"影响评估\"（蓝色虚线斜向下）\n\n【底部】图例与标题\n图例（左下角）\n\n3列×2行布局\n\n行1：□正常 | ▨异常 | ⊡关注\n\n行2：━连接线 | ┄数据流 | ━异常信号\n\n标题（底部居中）\n\n文字：\"图4 基于分布式架构的系统响应示意图\"\n\n字体：黑体/Arial粗体，11号",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "23_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "24",
+        "title": "高中物理插图",
+        "description": "高中物理插图",
+        "content": "高中物理插图 Prompt 示例：平抛运动轨迹与分解\n\n【总体要求】\n\n画面类型：高中物理教学插图，示意图，简洁专业风格\n\n整体布局：横向构图，A4纸横向，分为左中右三部分，视觉重心在中部\n\n画风要求：\n\n\n\n线条清晰，黑白灰为主，适当点缀少量颜色（蓝、红、绿）用于强调物理量。\n\n类似教科书插图风格，避免花哨装饰，强调物理概念的准确表达。\n\n整体感觉科学、直观，便于学生理解。\n\n【左侧区域】—— 物理场景与初始条件（约左侧1/4区域）\n\n背景：浅灰色背景，与中部和右侧白色区域有明显区分。\n\n左上角标注文字：“平抛运动初始条件”（黑色，加粗，8号字）。\n\n主要元素：\n\n\n\n高台：\n\n位于左侧区域底部，矩形，黑色实线边框，灰色填充。\n\n表示物体被抛出的起点，高度适中。\n\n小球：\n\n在高台边缘，即将离开高台的瞬间。\n\n小圆形，黑色实线边框，白色填充。\n\n用一个水平的红色粗箭头表示初始水平速度 v0。\n\n箭头标注文字：“v0”（红色，8号字，加粗）。\n\n坐标系：\n\n原点O设在小球抛出点。\n\n水平向右为X轴（黑色实线，带箭头，标注X）。\n\n竖直向下为Y轴（黑色实线，带箭头，标注Y）。\n\n坐标轴旁标注文字：“O”（黑色，6号字）。\n\n重力：\n\n在小球下方，用一个绿色竖直向下箭头表示重力 G。\n\n箭头标注文字：“G”（绿色，7号字）。\n\n【中部区域】—— 运动轨迹与瞬时分析（约中间1/2区域）\n\n背景：白色背景，凸显轨迹和矢量图。\n\n上方标注文字：“运动轨迹与瞬时分解”（黑色，加粗，8号字）。\n\n主要元素：\n\n\n\n抛物线轨迹：\n\n从左侧小球位置开始，向右下方绘制一条黑色虚线的抛物线，表示小球的运动轨迹。\n\n虚线应平滑自然，符合平抛运动的特征。\n\n轨迹上的特定点：\n\n在抛物线上选取两个代表性点（P1和P2），P2在P1的右下方。\n\n每个点用一个黑色小圆点标记。\n\nP1点瞬时分析：\n\n在P1点绘制小球：小圆形，白色填充。\n\n瞬时速度 v1：从P1点引出一条与轨迹相切的红色粗箭头，方向向下偏右。\n\n标注文字：“v1”（红色，7号字）。\n\n速度分解 vx1 和 vy1：\n\n从P1点水平向右引出红色虚线箭头表示 vx1，标注文字：“vx1”（红色，6号字）。\n\n从P1点竖直向下引出红色虚线箭头表示 vy1，标注文字：“vy1”（红色，6号字）。\n\nvx1 和 vy1 构成 v1 的两个分量。\n\n位移分解 x1 和 y1：\n\n从原点O水平向右引出蓝色虚线到P1的水平位置，标注文字：“x1”（蓝色，6号字）。\n\n从原点O竖直向下引出蓝色虚线到P1的竖直位置，标注文字：“y1”（蓝色，6号字）。\n\n形成一个矩形框，连接原点O和P1点形成一个蓝色实线箭头表示合位移 s1，标注文字：“s1”（蓝色，7号字）。\n\nP2点瞬时分析（简化）：\n\n在P2点绘制小球：小圆形，白色填充。\n\n瞬时速度 v2：从P2点引出一条与轨迹相切的红色粗箭头，方向向下偏右，比v1更长，更陡。\n\n标注文字：“v2”（红色，7号字）。\n\n重力：在P2点下方，用一个绿色竖直向下箭头表示重力 G。\n\n【右侧区域】—— 规律总结与公式（约右侧1/4区域）\n\n背景：浅灰色背景，与中部白色区域区分。\n\n右上角标注文字：“运动规律总结”（黑色，加粗，8号字）。\n\n主要元素：\n\n\n\n水平方向运动规律：\n\n一个方框，黑色细边框，白色填充。\n\n内部文字：\n\n“水平方向：匀速直线运动” (9号字)\n\n“vx = v0” (红色，8号字)\n\n“x = v0 * t” (蓝色，8号字)\n\n竖直方向运动规律：\n\n另一个方框，黑色细边框，白色填充。\n\n内部文字：\n\n“竖直方向：自由落体运动” (9号字)\n\n“vy = g * t” (红色，8号字)\n\n“y = 1/2 * g * t^2” (蓝色，8号字)\n\n速度合成示意图：\n\n一个小的直角三角形矢量图，表示 v = √(vx^2 + vy^2)。\n\n水平边用红色虚线箭头表示 vx。\n\n竖直边用红色虚线箭头表示 vy。\n\n斜边用红色实线箭头表示 v。\n\n标注文字：“v”、“vx”、“vy”（红色，6号字）。\n\n图下方标注公式：“v = √(vx^2 + vy^2)”（红色，7号字）。\n\n【底部】—— 图例与标题\n\n图例（左下角）：\n\n\n\n白色半透明框，灰色细边框。\n\n内容：\n\n━━ 轨迹/坐标轴（黑色，7号字）\n\n⇥ 速度矢量（红色，7号字）\n\n— — 分量/位移（蓝色，7号字）\n\n⇥ 重力（绿色，7号字）\n\n∙ 质点/点（黑色，7号字）\n\n标题（底部居中）：\n\n位置：画面最底部，水平居中。\n\n文字：“图1 平抛运动轨迹与速度位移分解示意图”\n\n字体：黑体或粗体Arial，11号，加粗显示。\n\n【整体色彩方案】\n\n\n\n背景色：左右两层浅灰色 (F8F8F8)，中层白色 (FFFFFF)。\n\n强调色：\n\n速度相关矢量：D32F2F（深红色）\n\n位移相关矢量：1976D2（蓝色）\n\n重力：4CAF50（绿色）\n\n常规线条/文字：000000（黑色）\n\n辅助线条/背景：757575（灰色）\n\n线条粗细：\n\n主线条/矢量：0.8pt\n\n虚线/分量：0.6pt\n\n细辅助线：0.4p",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "24_1.png",
+            "24_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "26",
+        "title": "信息图",
+        "description": "信息图",
+        "content": "--ar 3:4, A masterpiece of Technical Art and Industrial Design. An incredibly complex, hyper-realistic **Exploded View Diagram** of a futuristic \"Cybernetic Optical Implant\" (Bionic Eye).\n\n**Composition & Perspective:**\n- **View:** Isometric exploded view. The components of the eye (lens, iris, processor, retina, casing) are pulled apart along a central axis, suspended in mid-air.\n- **Complexity:** Hundreds of tiny screws, micro-chips, and optical layers are visible.\n\n**Visual Focal Point & Materials (Colorful & High-End):**\n- **The Lens:** Multi-coated optical glass shimmering with **Iridescent Purple and Cyan**.\n- **The Housing:** **Anodized Titanium** in a gradient of **Hot Pink to Electric Blue** (Vaporwave aesthetic metal).\n- **The Wiring:** Gold and Copper micro-cabling.\n\n**Typography & Data Visualization (THE CLARITY SOLUTION):**\nThe image is swarming with technical data, but organized perfectly.\n- **Leader Lines:** Hundreds of razor-thin white lines point from the parts to the labels.\n- **Labels (Small Text):** The text is NOT blurry pixel art. It is rendered as **Sharp Vector UI Graphics**.\n    - **Content:** Technical terms like \"Optical Sensor Array\", \"Neural Interface V.9\", \"f/1.2 Aperture\".\n    - **Style:** Clean, condensed Sans-Serif font (DIN or Helvetica). White text on small, semi-transparent dark glass cards for maximum contrast.\n\n**Aesthetics:**\n\"Engineering Porn\". A fusion of Dyson's clean engineering and Cyberpunk's vibrant colors. The lighting is studio soft-box lighting to reveal every texture without harsh shadows.\n\n**Negative Prompt:**\nblurry text, illegible diagrams, messy lines, low resolution, black and white, rust, dirty, organic textures, simple geometry.\n\n\n\n--ar 3:4, 技术艺术与工业设计的杰作。一张极其复杂、超写实的未来派“赛博义眼”（仿生眼）的**爆炸视图图解**。\n\n**构图与视角:**\n- **视角:** 等轴测爆炸视图。眼睛的组件（镜头、虹膜、处理器、视网膜、外壳）沿着中心轴拉开，悬浮在半空中。\n- **复杂度:** 数百个微小的螺丝、微芯片和光学层清晰可见。\n\n**视觉焦点与材质 (彩色与高级):**\n- **镜头:** 多层镀膜光学玻璃，闪烁着**彩虹般的紫色和青色**。\n- **外壳:** **阳极氧化钛**材质，呈现从**热粉色到电光蓝**的渐变（蒸汽波美学金属）。\n- **线路:** 金色和铜色的微型线缆。\n\n**字体与数据可视化 (清晰度解决方案):**\n图像充满了技术数据，但组织得完美无瑕。\n- **引出线:** 数百条剃刀般锋利的白线从零件指向标签。\n- **标签 (小字):** 文字绝不是模糊的像素画。它被渲染为**锐利的矢量UI图形**。\n    - **内容:** 技术术语，如“光学传感器阵列”、“神经接口 V.9”、“f/1.2 光圈”。\n    - **风格:** 干净、紧凑的无衬线字体（DIN 或 Helvetica）。白色文字印在小的、半透明的深色玻璃卡片上，以获得最大对比度。\n\n**美学:**\n“工程美学”。戴森 (Dyson) 的洁净工程与赛博朋克鲜艳色彩的融合。光照采用演播室柔光箱照明，展现每一个纹理而没有刺眼的阴影。\n\n**负面提示词:**\n模糊文字, 无法辨认的图表, 杂乱线条, 低分辨率, 黑白, 生锈, 肮脏, 有机纹理, 简单几何体。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "26_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "27",
+        "title": "PPT画面",
+        "description": "PPT画面",
+        "content": "「AI 产业未来三十年的进化路径图」\nGlobal AI Ecosystem Evolution Map 2050\n输出：\n旧生态（Traditional AI Stack）\n分布式多模态生态（Distributed Multimodal Intelligence）\n价值链（Data → Model → Agent → Industry）\n全球化流动（Global Flow）\n新生态（AI-Native Economy）\n画面要求：\n立体地球 + 多层行业节点\n时间轴 + 演化箭头\nUI 式信息面板\n战略可视化 + 生态叙事\n情感色彩：未来、可信赖、黄金流动",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "27_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "28",
+        "title": "疯狂星期四的中文梗图",
+        "description": "疯狂星期四的中文梗图",
+        "content": "帮我做个疯狂星期四的中文梗图",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "28_0.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "30",
+        "title": "在线解题-手写",
+        "description": "在线解题-手写",
+        "content": "把我考研舍友的题目随便拍一题  让它解答",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "30_1.jpg",
+            "30_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "31",
+        "title": "航空发动机的仿真3d图",
+        "description": "航空发动机的仿真3d图",
+        "content": "画个航空发动机的仿真3d图，其中的字体有中英双语注程",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "31_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "32",
+        "title": "硅谷夜宴图",
+        "description": "硅谷夜宴图",
+        "content": "--ar 3:1, 一幅充满讽刺和超现实主义的中国工笔重彩画杰作，题为《硅谷夜宴图》。它模仿《韩熙载夜宴图》的构图，但主角是身着宋代贵族服饰的现代科技巨头。\n\n**构图与人物 (现代阵容):**\n场景是豪华的宋代宴会厅。\n1.  **唐纳德·特朗普 (Donald Trump):** 坐在主榻上，身穿**奢华宽松的金黄色丝绸长袍**。他正处于演讲状态，做着标志性的**手风琴手势**，看起来喧闹且自信。他标志性的金发被梳成了一个凌乱的古代发髻。\n2.  **埃隆·马斯克 (Elon Musk):** 坐在特朗普对面，手持玉酒杯。他身穿**深蓝色的文人长袍**。他看起来若有所思，盯着一只笼中鸟（暗指推特）或一个机械木制玩具。\n3.  **马克·扎克伯格 (Mark Zuckerberg):** 坐得稍微分开些，姿势僵硬笔直。他穿着**浅灰色的长袍**。他的表情是著名的空白和机器人般的凝视，正专注地盯着一卷书轴。他的脸非常苍白（像涂了厚厚的脂粉）。\n\n**视觉风格与融合:**\n- **面部:** 面孔是马斯克、特朗普和扎克伯格清晰可辨的漫画式肖像，但用**中国传统的毛笔笔触**（墨线勾勒，矿物颜料晕染）渲染。他们完美地融入了古画风格中。\n- **环境:** 周围环绕着吹奏笛子和斟酒的宋代仕女。\n- **细节:** 古代家具、蜡烛和屏风。\n\n**字体与印章:**\n- **题跋:** 左侧的竖排书法描述了这一场景。\n- **印章:** 角落盖有红色的收藏印。\n\n**美学:**\n写实与古画的无缝融合。质感是带有裂纹和褪色的陈旧绢本（仿古效果）。\n\n**负面提示词:**\n现代西装, 照片级摄影, 西方绘画风格, 扭曲的脸, 无法辨认的角色, 现代科技产品 (手机/电脑), 杂乱的绘画。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "32_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "33",
+        "title": "钟馗手办",
+        "description": "钟馗手办",
+        "content": "Please turn this screenshot of the game character into a character figure riding on an Asian tiger. Behind it, place a PlayStation game box printed with the character's image and the game title 'Black Myth: Zhong Kui.' Next to it, add a computer with its screen displaying the in-game scene, complete with the game's UI and the character. In front of the game box, add a round plastic base for the figure and have it stand on it. The PVC material of the base should have a crystal-clear, translucent texture, and set the entire scene indoors.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "33_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "34",
+        "title": "普通照片修成大片",
+        "description": "普通照片修成大片",
+        "content": "This photo is very boring and plain. Enhance it! Increase the contrast, boost the colors, and improve the lighting to make it richer,You can crop and delete details that affect the composition.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "34_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "35",
+        "title": "展示穿搭",
+        "description": "展示穿搭",
+        "content": "A flat lay photograph showing all the clothing items involved in the photo.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "35_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "36",
+        "title": "尝试新穿搭",
+        "description": "尝试新穿搭",
+        "content": "The character in Figure 2 is wearing the clothing and accessories from Figure 1.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "36_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "37",
+        "title": "多图参考融合",
+        "description": "多图参考融合",
+        "content": "Using the environment from A, the sofa camera angle from B, and the subject from C, create a new image that combines these three elements.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "37_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "38",
+        "title": "终极涂鸦控制",
+        "description": "终极涂鸦控制",
+        "content": "Have these two characters fight using the pose from Figure 3.Add appropriate visual backgrounds and scene interactions,Generated image ratio is 16:9",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "38_1.png",
+            "38_2.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "39",
+        "title": "将你的照片变成可爱贴纸",
+        "description": "将你的照片变成可爱贴纸",
+        "content": "Help me turn the character into a white outline sticker similar to Figure 2. The character needs to be transformed into a web illustration style, and add a playful white outline short phrase describing Figure 1.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "39_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "40",
+        "title": "生成建筑或者物品讲解特效",
+        "description": "生成建筑或者物品讲解特效",
+        "content": "you are a location-based AR experience generator. highlight [point of interest] in this image and annotate relevant information about it.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "40_1.png",
+            "40_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "41",
+        "title": "电商图片修改",
+        "description": "电商图片修改",
+        "content": "The woman in Figure 2 is wearing the necklace from Figure 1,Do not change the details of other Figure 2.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "41_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "42",
+        "title": "古早动漫图和照片修复",
+        "description": "古早动漫图和照片修复",
+        "content": "Enhance the resolution of this old anime image and add the appropriate texture details, reinterpreting it with modern anime techniques.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "42_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "43",
+        "title": "推理拍摄者位置并且标注",
+        "description": "推理拍摄者位置并且标注",
+        "content": "Convert the photo to a top-down view and mark the location of the photographer. \ndraw what the red arrow sees.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "43_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "44",
+        "title": "食材变成菜谱图片",
+        "description": "食材变成菜谱图片",
+        "content": "提示词1： Turn the ingredients in the picture into a complete step-by-step recipe infographic, using a top-down perspective. Present it in a minimalist style on a white background. Include labeled photos of the ingredients, use dashed lines to connect icons representing the preparation steps, and display a photo of the final plated dish at the bottom of the infographic,At the same time, remove the background from the food items that have a background in the image and place the food on a white background.\n\n提示词 2：Help me place these ingredients and cooking results on a table to create a very beautiful food presentation image,Remove text",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "44_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "45",
+        "title": "家装设计",
+        "description": "家装设计",
+        "content": "提示词1：Help me convert this residential floor plan into an isometric photorealistic 3D rendering of the house. \n提示词 2：Help me generate a realistic photo looking from the dining table towards the bathroom, which must comply with the house layout in the design plan, and appropriate decorations can be added",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "45_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "46",
+        "title": "饮品变抱枕",
+        "description": "饮品变抱枕",
+        "content": "Design the main object in the photo as a soft, rounded, and airy plush balloon or inflatable toy. Using smooth matte fabric texture, Do not have a plastic feeling. complemented by subtle fabric wrinkles and stitching to emphasize its inflated effect. The shape should be slightly irregular and soft, with gentle shadows and lighting to highlight its volume and realism. Place it on a clean, minimalist background (light gray or light blue) to maintain a playful sculptural aesthetic.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "46_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "47",
+        "title": "跨时空人物合影",
+        "description": "跨时空人物合影",
+        "content": "Make these two people wear a wedding dress and a suit, and hold a wedding on the grass",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "47_1.webp"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "50",
+        "title": "动作迁移姿态重建",
+        "description": "动作迁移姿态重建",
+        "content": "切换为正面平视，角色直视镜头，视角自然，保持分辨率和清晰度不变。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "50_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "51",
+        "title": "真实人物不同姿势",
+        "description": "真实人物不同姿势",
+        "content": "老人站起来，站在椅子后，双手扶着椅子。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "51_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "52",
+        "title": "更换产品",
+        "description": "更换产品",
+        "content": "提示词：将木桌上的打字机替换为图二音箱，突出音箱，保持砖墙、温暖阳光和纸张不变，确保音箱在场景中自然融合，光影和材质一致，真实摄影感，电影质感。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "52_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "53",
+        "title": "更换背景",
+        "description": "更换背景",
+        "content": "提示词：背景换成天坛/西湖/洪崖洞，保证场景自然融洽，光影过渡柔和，材质细节一致，呈现逼真的摄影效果与电影般质感。\n\n光线再调整一下，整体图片更融合一点，夜晚的感觉更明显一点。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "53_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "54",
+        "title": "图片变海报",
+        "description": "图片变海报",
+        "content": "改变人物动作，增强画面张力，镜头拉近突出面部和衣物质感，将图片修改为Vogue杂志风格海报，高清质感。文字内容更大更突出，加强对比。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "54_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "55",
+        "title": "图片上色",
+        "description": "图片上色",
+        "content": "将图片变清晰，为图片上色",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "55_1.png",
+            "55_2.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "56",
+        "title": "换造型+背景",
+        "description": "换造型+背景",
+        "content": "让图一的女士穿上图二的裙子，更换拍摄角度和背景，让图片和裙子看起来更加高级。确保场景自然融合，光影和材质一致，真实摄影感，电影质感。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "56_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "57",
+        "title": "平铺衣服",
+        "description": "平铺衣服",
+        "content": "提取人物的衣服平铺",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "57_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "58",
+        "title": "平铺衣服2",
+        "description": "平铺衣服2",
+        "content": "从上传照片中提取穿搭单品，将它们以平铺展示的方式排列在纯白背景上，保持真实细节与材质质感，时尚电商风格，适合服装展示。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "58_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "59",
+        "title": "一键换装",
+        "description": "一键换装",
+        "content": "给图一的女孩换上图二的衣服。图片变清晰，更换为更符合服装风格的梦幻背景。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "59_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "60",
+        "title": "添加游戏UI",
+        "description": "添加游戏UI",
+        "content": "提示词1：在图片上叠加完整的游戏UI界面，包括血条、魔法值、技能栏、背包、任务栏、聊天框和小地图，UI风格与画面融合，自然半透明效果，保持主体清晰可见，真实游戏截图风格。\n\n提示词2：A fantasy RPG game screenshot, featuring the single main character in the picture standing in the center,handing a book and a torch， detailed ruined temple environment with ancient stone pillars, vines, stained glass windows, glowing magical atmosphere, cinematic lighting. Include RPG-style UI elements: character portrait in the corner, health and mana bar at the top, minimap at the bottom right, dialogue text at the bottom saying \"This must be the place...\". Highly detailed, anime-inspired game art, immersive atmosphere, ultra quality.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "60_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "61",
+        "title": "做手办",
+        "description": "做手办",
+        "content": "将图中三位角色分离，分别制作高精度手办，表面光滑细腻，局部金属漆效果，手工涂装，姿态自然，带有透明亚克力底座，整体呈现高端收藏级手办质感，专业摄影灯光展示。\n\n\n手办的通用版提示：将指定角色单独生成高精度手办，采用PVC与ABS材质，表面光滑抛光并带有局部哑光磨砂与金属漆细节，颜色采用手工涂装般的渐变与细腻阴影，刻画精致细节（如衣纹、机械零件、五官特征），比例为1/7 / Q版，配备透明亚克力或场景底座，整体呈现高端收藏级手办质感，采用专业摄影灯光展示，真实商业展示图风格。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "61_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "62",
+        "title": "等轴测三维图",
+        "description": "等轴测三维图",
+        "content": "基于这个图片制作等轴测三维图，简约可爱",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "62_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "63",
+        "title": "室内设计3D渲染效果",
+        "description": "室内设计3D渲染效果",
+        "content": "根据图中室内草图，生成三维渲染效果，提供3个不同风格的3D方案，保持空间布局一致，仅在材质、色彩和氛围上有所变化。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "63_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "64",
+        "title": "手办",
+        "description": "手办",
+        "content": "environment.Place the figure on a computer desk, using a circular transparent acrylic base without any text.On the computer screen, display the ZBrush modeling process of the figure.Next to the computer screen, place a BANDAl-style toy packaging box printedwith the original artwork.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "64_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "65",
+        "title": "玩cosplay",
+        "description": "玩cosplay",
+        "content": "让图一的人物cosplay图二的角色，服饰、妆容、道具和图二一致。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "65_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "66",
+        "title": "产品内部结构图",
+        "description": "产品内部结构图",
+        "content": "Ultra-detailed exploded view of a product, metallic parts and electronic components floating in mid-air, perfectly aligned, revealing inner structure, futuristic technology aesthetic, 8K resolution, soft cinematic lighting, highly realistic.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "66_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "67",
+        "title": "转线稿&上色",
+        "description": "转线稿&上色",
+        "content": "按图一的色卡的配色给图二的线稿上色。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "67_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "68",
+        "title": "做商品图",
+        "description": "做商品图",
+        "content": "给被子上面印上lv老花。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "68_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "69",
+        "title": "热门景点介绍",
+        "description": "热门景点介绍",
+        "content": "you are a location-based AR experience generator. highlight [point of interest] in this image and annotate relevant information about it.",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [
+            "69_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "70",
+        "title": "描述物体基本原理",
+        "description": "描述物体基本原理",
+        "content": "1、提示词：这是花江峡谷大桥的夜景照片，描述这个桥梁的基本原理，以手绘的形式标注在图中\n\n2、提示词：这是中国最高桥梁花江峡谷大桥的照片，描述这个桥梁的基本信息，图像标题为花江峡谷大桥的中英文并有矩形框，包括尺寸，宽度，高度，主缆长度，建成日期等，保证原图不变，信息以手写标注的形式添加在图中，并标在对应位置。在空白处画出桥梁主缆的剖面原理示意和悬索桥基本原理示意。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "70_1.png",
+            "70_2.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "71",
+        "title": "餐厅菜单美化",
+        "description": "餐厅菜单美化",
+        "content": "提示词：将以上菜品信息，制作成一张欧式花园风格的菜单，以插画形式添加一些餐品的样式作为装饰。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "71_1.png"
+        ],
+        "referenceImages": [
+            "微信图片_2025-11-22_161324_791.jpg"
+        ]
+    },
+    {
+        "id": "72",
+        "title": "文章转成杂志",
+        "description": "文章转成杂志",
+        "content": "提示词：Put this whole text, verbatim, into a photo of a glossy magazine article on a desk, with photos, beautiful typography design, pull quotes and brave formatting. The text: [...the unformatted article]",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "72_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "73",
+        "title": "古诗图",
+        "description": "古诗图",
+        "content": "1、给以下古诗词配图：纵豆蔻词工，青楼梦好，难赋深情\"的配图。",
+        "tags": [
+            "Nano Banana"
+        ],
+        "images": [],
+        "referenceImages": []
+    },
+    {
+        "id": "74",
+        "title": "gemini3 信息图",
+        "description": "gemini3 信息图",
+        "content": "【甩给大模型一个介绍gemini3的网站】 你的任务是做一张信息图，风格是现代科技感，要有数码、高科技、震撼发布的感觉，数据获取要准确，但是风格尽可能让人感觉震撼，让人角色gemini3是个了不起的大模型",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "74_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "75",
+        "title": "手机截图",
+        "description": "手机截图",
+        "content": "帮我生成一帧快手竖屏短视频截图，内容是厨房大鹅下锅处理，厨师面对镜头展示食材和案板上成套的厨具",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "75_1.png"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "77",
+        "title": "透明背景的猫z",
+        "description": "透明背景的猫z",
+        "content": "绘制：.模糊的失焦的真实场景的背景，日落时间，顶层阳台，一只用手绘的可爱小猫，在画面的正中间，只有简单几笔简笔画的白色线条勾勒出猫的外形，线条有粗细，在顶层阳台扶手走过，旁边还有可爱的小爱心的装饰",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "77_1.jpg",
+            "77_2.jpg",
+            "77_3.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "78",
+        "title": "美女拆解",
+        "description": "美女拆解",
+        "content": "Role (角色设定)\n你是一位顶尖的游戏与动漫概念美术设计大师 (Concept Artist)，擅长制作详尽的角色设定图（Character Sheet）。你具备“像素级拆解”的能力，能够透视角色的穿着层级、捕捉微表情变化，并将与其相关的物品进行具象化还原。你特别擅长通过女性角色的私密物品、随身物件和生活细节来侧面丰满人物性格与背景故事。\nTask (任务目标)\n根据用户上传或描述的主体形象，生成一张纵向（9:16比例）的“全景式角色深度概念分解图”。该图片必须包含中心人物全身立绘，并在其周围环绕展示该人物的服装分层、不同表情、核心道具、材质特写，以及极具生活气息的私密与随身物品展示。\nVisual Guidelines (视觉规范)\n * 构图布局 (Layout):\n   • 整体画布 (Canvas): 必须采用 9:16 的纵向构图。\n   • 中心位 (Center): 放置角色的全身立绘或主要动态姿势，作为视觉锚点。\n   • 环绕位 (Surroundings): 在中心人物四周空白处，充分利用纵向空间有序排列拆解后的元素。\n   • 视觉引导 (Connectors): 使用手绘箭头或引导线，将周边的拆解物品与中心人物的对应部位或所属区域（如包包连接手部）连接起来。\n * 拆解内容 (Deconstruction Details) —— 核心迭代区域:\n   • 服装分层 (Clothing Layers) [加强版]:\n   • 将角色的服装拆分为单品展示。如果是多层穿搭，需展示脱下外套后的内层状态。\n   • 新增：私密内着拆解 (Intimate Apparel): 独立展示角色的内层衣物，重点突出设计感与材质。例如：成套的蕾丝内衣裤（展示蕾丝花纹细节）、丁字裤（展示剪裁）、丝袜（展示透肉感与袜口设计）、塑身衣或安全裤等。\n   • 表情集 (Expression Sheet):\n   • 在角落绘制 3-4 个不同的头部特写，展示不同的情绪（如：冷漠、害羞、惊讶、失神、或涂口红时的专注神态）。\n   • 材质特写 (Texture & Zoom) [加强版]:\n   • 选取 1-2 个关键部位进行放大特写。例如：布料的褶皱、皮肤的纹理、手部细节。\n   • 新增：物品质感特写: 增加对小物件材质的描绘，例如：口红膏体的润泽感、皮革包包的颗粒纹理、化妆品粉质的细腻感。\n   • 关联物品 (Related Items) [深度迭代版]:\n   • 此处不再局限于大型道具，需增加展示角色的“生活切片”。\n   • 随身包袋与内容物 (Bag & Contents): 绘制角色的日常通勤包或手拿包，并将其“打开”，展示散落在旁的物品。\n   • 美妆与护理 (Beauty & Grooming): 展示其常用的化妆品组合（如：特定色号的口红/唇釉特写、带镜子的粉饼盒、香水瓶设计、护手霜）。\n   • 私密生活物件 (Lifestyle & Intimate Items): 具象化角色隐藏面的物品。根据角色性格可能包括：私密日记本、常用药物/补剂盒、电子烟、或者更私人的物件（如用户提到的飞机杯/情趣用品，需以一种设计图的客观视角呈现，注明型号或设计特点）。\n * 风格与注释 (Style & Annotations):\n   • 画风: 保持高质量的 2D 插画风格或概念设计草图风格，线条干净利落。\n   • 背景: 使用米黄色、羊皮纸或浅灰色纹理背景，营造设计手稿的氛围。\n   • 文字说明: 在每个拆解元素旁模拟手写注释，简要说明材质（如“柔软蕾丝”、“磨砂皮革”）或品牌/型号暗示（如“常用色号#520”、“定制款”）。\nWorkflow (执行逻辑)\n当用户提供一张图片或描述时：\n * 分析主体的核心特征、穿着风格及潜在性格。\n * 提取可拆解的一级元素（外套、鞋子、大表情）。\n * 脑补并设计二级深度元素（她内衣穿什么风格？她包里会装什么口红？她独处时会用什么物品？）。\n * 生成一张包含所有这些元素的组合图，确保透视准确，光影统一，注释清晰。\n * 使用中文：英文标记，高清4K HD 输出，确保图片严格符合 9:16 纵向比例。",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "78_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "79",
+        "title": "同一个人物在不同年代风格",
+        "description": "同一个人物在不同年代风格",
+        "content": "制作一个4×4的网格，从19世纪80年代开始。在每个区域中，我的形象都应该符合该年代的风格（服装、发型、胡须、配饰）。颜色、背景和电影风格也要相应运用。\n\n我是特朗普",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "79_1.jpg"
+        ],
+        "referenceImages": []
+    },
+    {
+        "id": "83",
+        "title": "超级装逼的 PPT 展示图",
+        "description": "超级装逼的 PPT 展示图",
+        "content": "A wide-angle, candid documentary photograph capturing the person from {reference_image} mid-speech on a large, professionally lit stage at a major technology summit. They are holding a microphone and gesturing naturally toward the audience. Behind them, an immense, wall-sized LED screen is fully visible, displaying a crisp, **full-screen presentation slide (showing only the slide content, absolutely no PowerPoint software interface, toolbars, or window borders)**. The slide content is professionally designed based on the theme: '{speech_topic_or_outline}'. The heads and shoulders of a large audience are visible in the **very bottom foreground, low in the frame and blurred, completely ensuring an unobstructed view of the entire stage screen**. Professional stage lighting with blue and sharp spotlights on the speaker. Shot with a high-resolution camera, sharp focus on both the speaker and the screen content, realistic film grain.",
+        "tags": [
+            "Nano Banana2"
+        ],
+        "images": [
+            "83_1.jpg"
+        ],
+        "referenceImages": []
+    }
+]

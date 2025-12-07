@@ -13,6 +13,9 @@ const Header = () => {
                         <a href="/exam" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
                             Take Exam &gt;
                         </a>
+                        <a href="/prompt.html" className="ml-2 text-geek-accent hover:underline text-xs border border-geek-accent/30 px-2 py-1 rounded">
+                            Prompts &gt;
+                        </a>
                     </p>
                 </div>
 

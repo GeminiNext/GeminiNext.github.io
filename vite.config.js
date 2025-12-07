@@ -11,6 +11,7 @@ export default defineConfig({
         main: 'index.html',
         exam: 'exam.html',
         exam_list: 'exam_list.html',
+        prompt: 'prompt.html',
       },
     },
   },
