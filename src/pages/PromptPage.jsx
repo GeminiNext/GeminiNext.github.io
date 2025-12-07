@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import promptsData from '../data/prompts.json';
 import Toast from '../components/Toast';
+import LazyImage from '../components/LazyImage';
 
 // Image Carousel Component for Cards
 const ImageCarousel = ({ images, onImageClick }) => {
@@ -24,19 +25,15 @@ const ImageCarousel = ({ images, onImageClick }) => {
                 className="w-full h-48 overflow-hidden cursor-pointer relative group/img"
                 onClick={() => onImageClick(images, currentIndex)}
             >
-                <img
+                <LazyImage
                     src={`/prompt_images/${images[currentIndex]}`}
                     alt={`Image ${currentIndex + 1}`}
-                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-110"
+                    placeholderClassName="w-full h-full"
                     onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
+                        console.error('Image failed to load:', images[currentIndex]);
                     }}
                 />
-                <div className="hidden w-full h-full items-center justify-center bg-geek-bg/50 text-geek-dim text-xs">
-                    Image not found: {images[currentIndex]}
-                </div>
 
                 {/* View Button Overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
@@ -237,11 +234,11 @@ const PromptPage = () => {
                                 ✕
                             </button>
 
-                            <img
+                            <LazyImage
                                 src={`/prompt_images/${selectedImages[currentModalIndex]}`}
                                 alt="Preview"
-                                loading="lazy"
                                 className="max-w-full max-h-[85vh] rounded-lg shadow-[0_0_30px_rgba(0,255,157,0.1)]"
+                                placeholderClassName="min-w-[400px] min-h-[300px]"
                                 onClick={(e) => e.stopPropagation()}
                             />
 
