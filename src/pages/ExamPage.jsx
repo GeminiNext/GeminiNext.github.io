@@ -295,6 +295,14 @@ const ExamPage = () => {
                                 )}
                             </>
                         )}
+                        <a
+                            href="/exam_list"
+                            className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
+                            title="查看题库列表"
+                        >
+                            <span>🔍</span>
+                            <span className="hidden leading-none lg:inline">题库</span>
+                        </a>
                         <button
                             onClick={toggleTheme}
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}

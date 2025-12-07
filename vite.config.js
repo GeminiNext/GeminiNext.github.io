@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         exam: 'exam.html',
+        exam_list: 'exam_list.html',
       },
     },
   },
