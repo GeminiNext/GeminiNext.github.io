@@ -27,6 +27,7 @@ const ImageCarousel = ({ images, onImageClick }) => {
                 <img
                     src={`/prompt_images/${images[currentIndex]}`}
                     alt={`Image ${currentIndex + 1}`}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-110"
                     onError={(e) => {
                         e.target.style.display = 'none';
@@ -239,6 +240,7 @@ const PromptPage = () => {
                             <img
                                 src={`/prompt_images/${selectedImages[currentModalIndex]}`}
                                 alt="Preview"
+                                loading="lazy"
                                 className="max-w-full max-h-[85vh] rounded-lg shadow-[0_0_30px_rgba(0,255,157,0.1)]"
                                 onClick={(e) => e.stopPropagation()}
                             />
