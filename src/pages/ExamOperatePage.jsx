@@ -142,9 +142,21 @@ const ExamOperatePage = () => {
                                         </p>
 
                                         <div className="relative">
-                                            <pre className={`code-block scrollbar-hide ${isDarkMode ? '' : 'light'}`}>
-                                                <code>{item.code}</code>
-                                            </pre>
+                                            <div className={`code-block-container ${isDarkMode ? '' : 'light'}`}>
+                                                {Array.isArray(item.code) ? (
+                                                    item.code.map((line, lineIndex) => (
+                                                        <div key={lineIndex} className={`code-line ${isDarkMode ? '' : 'light'}`}>
+                                                            <span className="line-number">{lineIndex + 1}</span>
+                                                            <code className="line-content">{line}</code>
+                                                        </div>
+                                                    ))
+                                                ) : (
+                                                    <div className={`code-line ${isDarkMode ? '' : 'light'}`}>
+                                                        <span className="line-number">1</span>
+                                                        <code className="line-content">{item.code}</code>
+                                                    </div>
+                                                )}
+                                            </div>
                                             <div className="absolute top-2 right-2 flex space-x-1 opacity-0 group-hover:opacity-100 transition-opacity">
                                                 <div className="w-2 h-2 rounded-full bg-red-500"></div>
                                                 <div className="w-2 h-2 rounded-full bg-yellow-500"></div>

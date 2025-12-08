@@ -52,65 +52,108 @@
     box-shadow: 0 10px 40px -10px rgba(59, 130, 246, 0.15);
 }
 
-/* Code Block Styling */
-.code-block {
+/* Code Block Container Styling */
+.code-block-container {
     background: #000;
-    color: #e2e8f0;
-    padding: 1rem;
     border-radius: 8px;
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    overflow-x: auto;
     border: 1px solid #1f1f1f;
-    position: relative;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85rem;
     transition: border-color 0.2s;
 }
 
-.code-block.light {
+.code-block-container.light {
     background: #f8fafc;
-    /* slate-50 */
-    color: #334155;
-    /* slate-700 */
     border: 1px solid #e2e8f0;
 }
 
-.operate-card:hover .code-block {
+.operate-card:hover .code-block-container {
     border-color: #333;
 }
 
-.operate-card.light:hover .code-block.light {
+.operate-card.light:hover .code-block-container.light {
     border-color: #cbd5e1;
 }
 
-.code-block code {
-    white-space: pre-wrap;
-    word-break: break-all;
+/* Individual Code Line Styling */
+.code-line {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    transition: background-color 0.2s;
 }
 
-/* Custom Scrollbar for code blocks */
-.code-block::-webkit-scrollbar {
+.code-line:last-child {
+    border-bottom: none;
+}
+
+.code-line:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.code-line.light {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.code-line.light:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* Line Number Styling */
+.line-number {
+    display: inline-block;
+    min-width: 2.5rem;
+    padding: 0 0.75rem;
+    text-align: right;
+    color: #666;
+    user-select: none;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.code-line.light .line-number {
+    color: #94a3b8;
+}
+
+/* Line Content Styling */
+.line-content {
+    flex: 1;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    padding-right: 1rem;
+    line-height: 1.6;
+}
+
+.code-line.light .line-content {
+    color: #334155;
+}
+
+/* Custom Scrollbar for code container */
+.code-block-container::-webkit-scrollbar {
     height: 6px;
 }
 
-.code-block::-webkit-scrollbar-track {
+.code-block-container::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.code-block::-webkit-scrollbar-thumb {
+.code-block-container::-webkit-scrollbar-thumb {
     background: #333;
     border-radius: 3px;
 }
 
-.code-block.light::-webkit-scrollbar-thumb {
+.code-block-container.light::-webkit-scrollbar-thumb {
     background: #cbd5e1;
 }
 
-.code-block::-webkit-scrollbar-thumb:hover {
+.code-block-container::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-.code-block.light::-webkit-scrollbar-thumb:hover {
+.code-block-container.light::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
 
