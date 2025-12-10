@@ -110,7 +110,7 @@ const ExamOperatePage = () => {
                         人工智能训练师实操知识库
                     </h1>
                     <p className={`${subtitleColor} text-lg`}>
-                        基于知识卡片 1.1.1-2.2.5 整理 • 实战速查手册
+                        基于知识卡片 1.1.1-3.1.5 整理 • 实战速查手册
                     </p>
                 </div>
 
