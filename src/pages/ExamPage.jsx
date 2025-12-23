@@ -468,6 +468,15 @@ const ExamPage = () => {
                                     );
                                 })
                             )}
+                            <div className={`mt-6 p-4 rounded-lg text-sm leading-relaxed transition-all duration-300 ${mode === 'practice' || userAnswers[questions[currentQuestionIndex].id] ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'} ${isDarkMode ? "bg-[#27272a]/50 text-gray-300" : "bg-blue-50 text-blue-800"}`}>
+                                <h4 className="font-bold mb-2 flex items-center gap-2">
+                                    <span>💡</span> 题目解析
+                                </h4>
+                                <p>
+                                    {questions[currentQuestionIndex].explanation ||
+                                        "本题主要考察人工智能训练师的基础理论知识。建议结合官方教材第三章节关于数据标注规范的内容进行复习。"}
+                                </p>
+                            </div>
                         </div>
 
                         <div className="flex justify-between">

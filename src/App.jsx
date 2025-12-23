@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ExamPage from './pages/ExamPage';
 import ExamOperatePage from './pages/ExamOperatePage';
+import PrivacyPage from './pages/PrivacyPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         } />
         <Route path="/exam" element={<ExamPage />} />
         <Route path="/exam_operate" element={<ExamOperatePage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
