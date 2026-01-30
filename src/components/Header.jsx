@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,12 +11,12 @@ const Header = () => {
                     </h1>
                     <p className="text-geek-dim font-mono text-sm md:text-base mt-2">
                         独立开发出海工具合集 & 黄金时间分配法则
-                        <a href="/exam" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
+                        <Link to="/exam" className="ml-4 text-geek-primary hover:underline text-xs border border-geek-primary/30 px-2 py-1 rounded">
                             人工智能3级训练师 &gt;
-                        </a>
-                        <a href="/blog" className="ml-2 text-geek-secondary hover:underline text-xs border border-geek-secondary/30 px-2 py-1 rounded">
+                        </Link>
+                        <Link to="/blog" className="ml-2 text-geek-secondary hover:underline text-xs border border-geek-secondary/30 px-2 py-1 rounded">
                             博客 &gt;
-                        </a>
+                        </Link>
                         <a href="/prompt.html" className="ml-2 text-geek-accent hover:underline text-xs border border-geek-accent/30 px-2 py-1 rounded">
                             Prompts &gt;
                         </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ToolCard from '../components/ToolCard';
 import { phases } from '../data/tools';
 import { articles } from '../data/articles';
@@ -15,14 +16,14 @@ const HomePage = () => {
                         </h2>
                         <p className="text-geek-dim font-mono text-sm">Deep Insights & Strategy</p>
                     </div>
-                    <a href="/blog" className="text-geek-primary hover:underline font-bold">查看全部 &rsaquo;</a>
+                    <Link to="/blog" className="text-geek-primary hover:underline font-bold">查看全部 &rsaquo;</Link>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {articles.slice(0, 3).map((article) => (
                         <div key={article.id} className="glass-card border border-geek-border/40 p-6 rounded-xl hover:bg-white/5 transition-all">
                             <span className="text-[10px] font-mono text-geek-secondary mb-2 block uppercase">{article.date}</span>
                             <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 hover:text-geek-primary transition-colors">
-                                <a href={`/blog/${article.id}`}>{article.title}</a>
+                                <Link to={`/blog/${article.id}`}>{article.title}</Link>
                             </h3>
                             <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">
                                 {article.summary}
