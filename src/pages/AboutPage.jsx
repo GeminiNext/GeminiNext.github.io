@@ -54,6 +54,49 @@ const AboutPage = () => {
                         </section>
                     </div>
 
+                    {/* Vision & Values Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="glass-card border border-geek-border p-6 rounded-xl text-center">
+                            <div className="text-3xl mb-4">🛡️</div>
+                            <h3 className="font-bold text-white mb-2">纯净无骚扰</h3>
+                            <p className="text-xs text-gray-500">我们坚持极简设计，拒绝任何形式的弹窗干扰，只为提供最纯净的阅读和刷题体验。</p>
+                        </div>
+                        <div className="glass-card border border-geek-border p-6 rounded-xl text-center">
+                            <div className="text-3xl mb-4">💎</div>
+                            <h3 className="font-bold text-white mb-2">高质量筛选</h3>
+                            <p className="text-xs text-gray-500">所有的工具链接和 Prompt 都经过人工实测，只有真正能提高生产力的工具才会被列入名单。</p>
+                        </div>
+                        <div className="glass-card border border-geek-border p-6 rounded-xl text-center">
+                            <div className="text-3xl mb-4">🤝</div>
+                            <h3 className="font-bold text-white mb-2">社区驱动</h3>
+                            <p className="text-xs text-gray-500">GeminiNext 由开发者为开发者构建。您的每一条反馈都在直接塑造这个平台的未来。</p>
+                        </div>
+                    </div>
+
+                    {/* Milestone Section */}
+                    <section className="glass-card border border-geek-border rounded-xl p-8">
+                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                            <span className="text-geek-secondary">📈</span> 发展愿景 (Vision)
+                        </h2>
+                        <div className="relative pl-8 border-l-2 border-geek-border space-y-8">
+                            <div className="relative">
+                                <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-geek-secondary shadow-[0_0_10px_rgba(0,163,255,0.5)]"></div>
+                                <h4 className="font-bold text-white mb-1">Stage 1: 资源基石</h4>
+                                <p className="text-sm text-gray-400">构建最全的独立开发出海工具栈和人工智能训练师等级考试复习指南，日活跃用户稳定增长。</p>
+                            </div>
+                            <div className="relative">
+                                <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-geek-border"></div>
+                                <h4 className="font-bold text-white mb-1">Stage 2: 知识枢纽 (Currently)</h4>
+                                <p className="text-sm text-gray-400">引入深度博客、指南和实战复盘，通过高质量内容沉淀流量，解决用户信息孤岛问题。</p>
+                            </div>
+                            <div className="relative">
+                                <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-geek-border"></div>
+                                <h4 className="font-bold text-white mb-1">Stage 3: 互动生态</h4>
+                                <p className="text-sm text-gray-400">上线用户互动评论系统和共建计划，让 GeminiNext 成为独立开发者交流心得和资源的避风港。</p>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* Story Section */}
                     <section className="glass-card border border-geek-border rounded-xl p-8">
                         <h2 className="text-2xl font-bold text-white mb-6">背后的故事</h2>
@@ -75,15 +118,26 @@ const AboutPage = () => {
                         <div>
                             <h2 className="text-2xl font-bold text-white mb-2">联系与反馈</h2>
                             <p className="text-gray-400">
-                                有好的工具推荐？通过考试发现了新题型？或者只是想打个招呼？
+                                发现题库中有错误？有更好的出海工具推荐？
+                            </p>
+                            <p className="text-xs text-geek-dim mt-2 font-mono">
+                                官方联系：sunstar1227@126.com
                             </p>
                         </div>
-                        <a
-                            href="mailto:sunstar1227@126.com"
-                            className="px-6 py-3 rounded-lg bg-geek-primary text-black font-bold hover:bg-geek-primary/90 transition-all whitespace-nowrap"
-                        >
-                            发邮件给我们
-                        </a>
+                        <div className="flex gap-4">
+                            <a
+                                href="/blog"
+                                className="px-6 py-3 rounded-lg border border-geek-primary text-geek-primary font-bold hover:bg-geek-primary/10 transition-all"
+                            >
+                                浏览深度指南
+                            </a>
+                            <a
+                                href="mailto:sunstar1227@126.com"
+                                className="px-6 py-3 rounded-lg bg-geek-primary text-black font-bold hover:bg-geek-primary/90 transition-all whitespace-nowrap"
+                            >
+                                发送邮件
+                            </a>
+                        </div>
                     </section>
                 </div>
             </div>
