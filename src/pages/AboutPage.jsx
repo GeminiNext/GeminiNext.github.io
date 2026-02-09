@@ -125,12 +125,12 @@ const AboutPage = () => {
                             </p>
                         </div>
                         <div className="flex gap-4">
-                            <a
-                                href="/blog"
+                            <Link
+                                to="/blog"
                                 className="px-6 py-3 rounded-lg border border-geek-primary text-geek-primary font-bold hover:bg-geek-primary/10 transition-all"
                             >
                                 浏览深度指南
-                            </a>
+                            </Link>
                             <a
                                 href="mailto:sunstar1227@126.com"
                                 className="px-6 py-3 rounded-lg bg-geek-primary text-black font-bold hover:bg-geek-primary/90 transition-all whitespace-nowrap"
