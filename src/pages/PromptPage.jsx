@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import promptsData from '../data/prompts.json';
 import Toast from '../components/Toast';
 import LazyImage from '../components/LazyImage';
@@ -153,9 +154,9 @@ const PromptPage = () => {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
                     <div className="flex items-center gap-4">
-                        <a href="/" className="text-geek-dim hover:text-white transition-colors">
+                        <Link to="/" className="text-geek-dim hover:text-white transition-colors">
                             &larr; Back
-                        </a>
+                        </Link>
                         <h1 className="text-2xl md:text-3xl font-bold text-white flex flex-col md:flex-row md:items-center">
                             <div>
                                 <span className="text-geek-primary font-mono">&gt;</span> Prompt Library

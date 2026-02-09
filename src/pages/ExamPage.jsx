@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 import questionBank from '../data/question_bank_clean.json';
 
@@ -305,21 +305,21 @@ const ExamPage = () => {
                             </>
                         )}
                         <a
-                            href="/exam_list"
+                            href="/exam_list.html"
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
                             title="查看题库列表"
                         >
                             <span>🔍</span>
                             <span className="hidden leading-none lg:inline">题库</span>
                         </a>
-                        <a
-                            href="/exam_operate"
+                        <Link
+                            to="/exam_operate"
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
                             title="实操知识库"
                         >
                             <span>💻</span>
                             <span className="hidden leading-none lg:inline">实操库</span>
-                        </a>
+                        </Link>
                         <ThemeToggle />
                     </div>
                 </div>
