@@ -29,20 +29,141 @@ const BlogDetailPage = () => {
 
     // 简单的 Markdown 模拟渲染逻辑
     const renderContent = (content) => {
-        return content.split('\n').map((line, index) => {
+        const lines = content.split('\n');
+        const elements = [];
+        let inCodeBlock = false;
+        let codeBlockContent = [];
+        let codeBlockLang = '';
+        let inTable = false;
+        let tableRows = [];
+
+        for (let index = 0; index < lines.length; index++) {
+            const line = lines[index];
             const trimmedLine = line.trim();
-            if (trimmedLine.startsWith('# ')) {
-                return <h1 key={index} className="text-3xl md:text-4xl font-bold text-white mt-12 mb-6">{trimmedLine.replace('# ', '')}</h1>;
+
+            // 处理代码块
+            if (trimmedLine.startsWith('```')) {
+                if (!inCodeBlock) {
+                    // 开始代码块
+                    inCodeBlock = true;
+                    codeBlockLang = trimmedLine.slice(3).trim();
+                    codeBlockContent = [];
+                } else {
+                    // 结束代码块
+                    inCodeBlock = false;
+                    elements.push(
+                        <div key={index} className="my-6 rounded-lg overflow-hidden border border-geek-border/50">
+                            {codeBlockLang && (
+                                <div className="bg-geek-border/30 px-4 py-2 text-xs font-mono text-geek-dim uppercase">
+                                    {codeBlockLang}
+                                </div>
+                            )}
+                            <pre className="bg-geek-bg/50 p-4 overflow-x-auto">
+                                <code className="text-sm font-mono text-gray-300">
+                                    {codeBlockContent.join('\n')}
+                                </code>
+                            </pre>
+                        </div>
+                    );
+                    codeBlockContent = [];
+                    codeBlockLang = '';
+                }
+                continue;
+            }
+
+            // 在代码块内
+            if (inCodeBlock) {
+                codeBlockContent.push(line);
+                continue;
+            }
+
+            // 处理表格
+            if (trimmedLine.startsWith('|')) {
+                if (!inTable) {
+                    inTable = true;
+                    tableRows = [];
+                }
+                tableRows.push(line);
+                continue;
+            } else if (inTable) {
+                // 表格结束
+                inTable = false;
+                const rows = tableRows.filter(r => !r.includes('|---')); // 过滤分隔行
+                if (rows.length > 0) {
+                    const headerCells = rows[0].split('|').filter(c => c.trim()).map(c => c.trim());
+                    const bodyRows = rows.slice(1);
+
+                    elements.push(
+                        <div key={index} className="my-6 overflow-x-auto">
+                            <table className="w-full border-collapse border border-geek-border/50 rounded-lg overflow-hidden">
+                                <thead className="bg-geek-border/30">
+                                    <tr>
+                                        {headerCells.map((cell, i) => (
+                                            <th key={i} className="border border-geek-border/50 px-4 py-2 text-left text-sm font-bold text-white">
+                                                {cell}
+                                            </th>
+                                        ))}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {bodyRows.map((row, rowIndex) => {
+                                        const cells = row.split('|').filter(c => c.trim()).map(c => c.trim());
+                                        return (
+                                            <tr key={rowIndex} className="hover:bg-geek-border/10">
+                                                {cells.map((cell, cellIndex) => (
+                                                    <td key={cellIndex} className="border border-geek-border/50 px-4 py-2 text-sm text-gray-300">
+                                                        {parseInlineStyles(cell)}
+                                                    </td>
+                                                ))}
+                                            </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+                    );
+                }
+                tableRows = [];
+            }
+
+            // 处理标题
+            if (trimmedLine.startsWith('### ')) {
+                elements.push(<h3 key={index} className="text-xl font-bold text-white mt-6 mb-3">{trimmedLine.replace('### ', '')}</h3>);
+                continue;
             }
             if (trimmedLine.startsWith('## ')) {
-                return <h2 key={index} className="text-2xl font-bold text-white mt-8 mb-4 border-l-4 border-geek-primary pl-4">{trimmedLine.replace('## ', '')}</h2>;
+                elements.push(<h2 key={index} className="text-2xl font-bold text-white mt-8 mb-4 border-l-4 border-geek-primary pl-4">{trimmedLine.replace('## ', '')}</h2>);
+                continue;
             }
+            if (trimmedLine.startsWith('# ')) {
+                elements.push(<h1 key={index} className="text-3xl md:text-4xl font-bold text-white mt-12 mb-6">{trimmedLine.replace('# ', '')}</h1>);
+                continue;
+            }
+
+            // 处理列表
             if (trimmedLine.startsWith('- ')) {
-                return <li key={index} className="ml-6 mb-2 text-gray-300 list-disc">{parseInlineStyles(trimmedLine.replace('- ', ''))}</li>;
+                elements.push(<li key={index} className="ml-6 mb-2 text-gray-300 list-disc">{parseInlineStyles(trimmedLine.replace('- ', ''))}</li>);
+                continue;
             }
-            if (trimmedLine === '') return <div key={index} className="h-4" />;
-            return <p key={index} className="text-gray-300 leading-loose mb-6 text-lg">{parseInlineStyles(line)}</p>;
-        });
+
+            // 处理数字列表
+            if (/^\d+\.\s/.test(trimmedLine)) {
+                const content = trimmedLine.replace(/^\d+\.\s/, '');
+                elements.push(<li key={index} className="ml-6 mb-2 text-gray-300 list-decimal">{parseInlineStyles(content)}</li>);
+                continue;
+            }
+
+            // 空行
+            if (trimmedLine === '') {
+                elements.push(<div key={index} className="h-4" />);
+                continue;
+            }
+
+            // 普通段落
+            elements.push(<p key={index} className="text-gray-300 leading-loose mb-6 text-lg">{parseInlineStyles(line)}</p>);
+        }
+
+        return elements;
     };
 
     return (
