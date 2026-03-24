@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { operateKnowledgeData } from '../data/operate_knowledge';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
@@ -92,14 +91,14 @@ const ExamOperatePage = () => {
 
                     {/* Right Section */}
                     <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-                        <Link
-                            to="/exam"
+                        <a
+                            href="exam.html"
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
                             title="返回考试"
                         >
                             <span>📝</span>
                             <span className="hidden leading-none lg:inline">考试</span>
-                        </Link>
+                        </a>
                         <ThemeToggle />
                     </div>
                 </div>
