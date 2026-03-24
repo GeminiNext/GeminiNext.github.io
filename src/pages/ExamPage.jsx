@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 import questionBank from '../data/question_bank_clean.json';
@@ -25,7 +25,7 @@ const ExamPage = () => {
     const [questions, setQuestions] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [userAnswers, setUserAnswers] = useState({}); // { questionId: { answer, isCorrect } }
-    const [timeLeft, setTimeLeft] = useState(90 * 60); // 90 minutes in seconds
+    const [timeLeft, setTimeLeft] = useState(3); // 3 seconds for testing
     const [score, setScore] = useState(0);
     const [showOverview, setShowOverview] = useState(false);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -113,24 +113,17 @@ const ExamPage = () => {
         setShowOverview(false);
     };
 
-    // Timer Logic (only for exam mode)
-    useEffect(() => {
-        let timer;
-        if (mode === 'exam' && examStatus === 'in_progress') {
-            timer = setInterval(() => {
-                setTimeLeft(prev => {
-                    if (prev <= 1) {
-                        return 0;
-                    }
-                    return prev - 1;
-                });
-            }, 1000);
-        }
-        return () => clearInterval(timer);
-    }, [mode, examStatus]);
+    // Refs for timer and latest submitExam
+    const timerRef = useRef(null);
+    const submitExamRef = useRef(null);
 
     // Submit Exam
     const submitExam = useCallback(() => {
+        // Clear timer just in case
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+            timerRef.current = null;
+        }
         let calculatedScore = 0;
         const updatedAnswers = { ...userAnswers };
 
@@ -160,12 +153,35 @@ const ExamPage = () => {
         setExamStatus('finished');
     }, [questions, userAnswers]);
 
-    // Auto-submit when time runs out
+    // Keep ref in sync so the timer callback always calls the latest version
     useEffect(() => {
-        if (mode === 'exam' && timeLeft === 0 && examStatus === 'in_progress') {
-            submitExam();
+        submitExamRef.current = submitExam;
+    }, [submitExam]);
+
+    // Timer Logic (only for exam mode)
+    useEffect(() => {
+        if (mode === 'exam' && examStatus === 'in_progress') {
+            timerRef.current = setInterval(() => {
+                setTimeLeft(prev => {
+                    if (prev <= 1) {
+                        // Time's up: clear interval and auto-submit
+                        clearInterval(timerRef.current);
+                        timerRef.current = null;
+                        // Defer submitExam to avoid calling setState inside setState updater
+                        setTimeout(() => submitExamRef.current?.(), 0);
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 1000);
         }
-    }, [timeLeft, mode, examStatus, submitExam]);
+        return () => {
+            if (timerRef.current) {
+                clearInterval(timerRef.current);
+                timerRef.current = null;
+            }
+        };
+    }, [mode, examStatus]);
 
     // Format Time
     const formatTime = (seconds) => {
