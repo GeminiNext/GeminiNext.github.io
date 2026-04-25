@@ -1,41 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useTheme } from '../contexts/ThemeContext';
 
 const ThemeToggle = ({ className = '', showLabel = true, floating = false }) => {
-    // Initialize dark mode from localStorage, default to true
-    // We use a custom event to sync state across components if needed, or just rely on localStorage events
-    // For simplicity in React without Context/Redux, we'll read from localStorage on mount
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        const saved = localStorage.getItem('examPageDarkMode');
-        return saved !== null ? JSON.parse(saved) : true;
-    });
-
-    useEffect(() => {
-        localStorage.setItem('examPageDarkMode', JSON.stringify(isDarkMode));
-        // Dispatch a custom event so other instances can update if they listen (optional enhancement)
-        window.dispatchEvent(new Event('theme-change'));
-    }, [isDarkMode]);
-
-    // Listen for storage changes (cross-tab) or custom events (same-tab)
-    useEffect(() => {
-        const handleStorageChange = () => {
-            const saved = localStorage.getItem('examPageDarkMode');
-            if (saved !== null) {
-                setIsDarkMode(JSON.parse(saved));
-            }
-        };
-
-        window.addEventListener('storage', handleStorageChange);
-        window.addEventListener('theme-change', handleStorageChange);
-
-        return () => {
-            window.removeEventListener('storage', handleStorageChange);
-            window.removeEventListener('theme-change', handleStorageChange);
-        };
-    }, []);
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-    };
+    const { isDarkMode, toggleTheme } = useTheme();
 
     const buttonClasses = isDarkMode
         ? "bg-[#27272a] hover:bg-[#3f3f46] text-white border border-[#27272a] hover:border-[#00ff9d] transition-all duration-300"
