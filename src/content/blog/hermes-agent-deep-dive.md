@@ -6,7 +6,6 @@ author: "gemini4.cn Editor"
 summary: "Hermes Agent 是一个通用型 AI Agent 平台，它将大模型推理、工具调用、终端执行、文件操作、网页检索等整合到一个统一框架中。本文将对其功能与通用使用场景进行深度分析。"
 ---
 
-![Hermes Agent Overview](/blog_images/hermes_agent_overview.png)
 
 ## 1. 项目定位
 
