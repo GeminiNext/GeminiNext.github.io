@@ -1,10 +1,16 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import ThemeToggle from '../components/ThemeToggle';
-import questionBank from '../data/question_bank_clean.json';
+import ThemeToggle from '../../components/ThemeToggle';
+import questionBank from '../../data/question_bank_clean.json';
+import useDocumentMeta from '../../hooks/useDocumentMeta';
 
 const ExamPage = () => {
     const navigate = useNavigate();
+
+    useDocumentMeta({
+        title: '人工智能训练师3级在线模拟考试',
+        description: '人工智能训练师等级认定3级在线模拟考试系统，包含判断题、单选题、多选题共190题，支持考试模式和刷题模式。',
+    });
 
     // Debug: Check if questionBank is loaded
     useEffect(() => {
@@ -320,16 +326,16 @@ const ExamPage = () => {
                                 )}
                             </>
                         )}
-                        <a
-                            href="/exam_list.html"
-                            className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
-                            title="查看题库列表"
-                        >
-                            <span>🔍</span>
-                            <span className="hidden leading-none lg:inline">题库</span>
-                        </a>
                         <Link
-                            to="/exam_operate"
+                            to="/"
+                            className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
+                            title="返回首页"
+                        >
+                            <span>🏠</span>
+                            <span className="hidden leading-none lg:inline">首页</span>
+                        </Link>
+                        <Link
+                            to="/exam/knowledge"
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
                             title="实操知识库"
                         >

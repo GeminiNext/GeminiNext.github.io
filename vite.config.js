@@ -6,15 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   build: {
     outDir: 'docs',
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-        exam: 'exam.html',
-        exam_list: 'exam_list.html',
-        exam_operate: 'exam_operate.html',
-        prompt: 'prompt.html',
-      },
-    },
   },
   plugins: [
     react(),
