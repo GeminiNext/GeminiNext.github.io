@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { articles } from '../../data/articles';
+import ReactMarkdown from 'react-markdown';
+import { getPostById } from '../../lib/blog';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const BlogDetailPage = () => {
     const { id } = useParams();
-    const article = useMemo(() => articles.find(a => a.id === id), [id]);
+    const article = useMemo(() => getPostById(id), [id]);
     const { isDarkMode } = useTheme();
 
     useDocumentMeta({
@@ -21,145 +22,6 @@ const BlogDetailPage = () => {
     const accentColor = isDarkMode ? 'text-geek-primary' : 'text-blue-600';
     const borderColor = isDarkMode ? 'border-geek-border' : 'border-gray-200';
     const textColor = isDarkMode ? 'text-gray-300' : 'text-gray-700';
-    const codeBg = isDarkMode ? 'bg-geek-border/50' : 'bg-gray-100';
-    const preBg = isDarkMode ? 'bg-geek-bg/50' : 'bg-gray-50';
-
-    // 解析行内样式
-    const parseInlineStyles = (text) => {
-        let parts = text.split(/(`[^`]+`)/g).map((part, i) => {
-            if (part.startsWith('`') && part.endsWith('`')) {
-                return <code key={i} className={`${codeBg} ${isDarkMode ? 'text-geek-secondary' : 'text-purple-600'} px-1.5 py-0.5 rounded font-mono text-sm mx-1`}>{part.slice(1, -1)}</code>;
-            }
-            const subParts = part.split(/(\*\*[^*]+\*\*)/g).map((subPart, j) => {
-                if (subPart.startsWith('**') && subPart.endsWith('**')) {
-                    return <strong key={`${i}-${j}`} className={`${headingColor} font-bold`}>{subPart.slice(2, -2)}</strong>;
-                }
-                return subPart;
-            });
-            return subParts;
-        });
-        return parts;
-    };
-
-    const renderContent = (content) => {
-        const lines = content.split('\n');
-        const elements = [];
-        let inCodeBlock = false;
-        let codeBlockContent = [];
-        let codeBlockLang = '';
-        let inTable = false;
-        let tableRows = [];
-
-        for (let index = 0; index < lines.length; index++) {
-            const line = lines[index];
-            const trimmedLine = line.trim();
-
-            if (trimmedLine.startsWith('```')) {
-                if (!inCodeBlock) {
-                    inCodeBlock = true;
-                    codeBlockLang = trimmedLine.slice(3).trim();
-                    codeBlockContent = [];
-                } else {
-                    inCodeBlock = false;
-                    elements.push(
-                        <div key={index} className={`my-6 rounded-lg overflow-hidden border ${borderColor}`}>
-                            {codeBlockLang && (
-                                <div className={`${isDarkMode ? 'bg-geek-border/30 text-geek-dim' : 'bg-gray-100 text-gray-500'} px-4 py-2 text-xs font-mono uppercase`}>
-                                    {codeBlockLang}
-                                </div>
-                            )}
-                            <pre className={`${preBg} p-4 overflow-x-auto`}>
-                                <code className={`text-sm font-mono ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                    {codeBlockContent.join('\n')}
-                                </code>
-                            </pre>
-                        </div>
-                    );
-                    codeBlockContent = [];
-                }
-                continue;
-            }
-
-            if (inCodeBlock) {
-                codeBlockContent.push(line);
-                continue;
-            }
-
-            if (trimmedLine.startsWith('|')) {
-                if (!inTable) {
-                    inTable = true;
-                    tableRows = [];
-                }
-                tableRows.push(line);
-                continue;
-            } else if (inTable) {
-                inTable = false;
-                const rows = tableRows.filter(r => !r.includes('|---'));
-                if (rows.length > 0) {
-                    const headerCells = rows[0].split('|').filter(c => c.trim()).map(c => c.trim());
-                    const bodyRows = rows.slice(1);
-                    elements.push(
-                        <div key={index} className="my-6 overflow-x-auto">
-                            <table className={`w-full border-collapse border ${borderColor} rounded-lg overflow-hidden`}>
-                                <thead className={isDarkMode ? 'bg-geek-border/30' : 'bg-gray-50'}>
-                                    <tr>
-                                        {headerCells.map((cell, i) => (
-                                            <th key={i} className={`border ${borderColor} px-4 py-2 text-left text-sm font-bold ${headingColor}`}>
-                                                {cell}
-                                            </th>
-                                        ))}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {bodyRows.map((row, rowIndex) => {
-                                        const cells = row.split('|').filter(c => c.trim()).map(c => c.trim());
-                                        return (
-                                            <tr key={rowIndex} className={isDarkMode ? 'hover:bg-geek-border/10' : 'hover:bg-gray-50'}>
-                                                {cells.map((cell, cellIndex) => (
-                                                    <td key={cellIndex} className={`border ${borderColor} px-4 py-2 text-sm ${textColor}`}>
-                                                        {parseInlineStyles(cell)}
-                                                    </td>
-                                                ))}
-                                            </tr>
-                                        );
-                                    })}
-                                </tbody>
-                            </table>
-                        </div>
-                    );
-                }
-                tableRows = [];
-            }
-
-            if (trimmedLine.startsWith('### ')) {
-                elements.push(<h3 key={index} className={`text-xl font-bold ${headingColor} mt-6 mb-3`}>{trimmedLine.replace('### ', '')}</h3>);
-                continue;
-            }
-            if (trimmedLine.startsWith('## ')) {
-                elements.push(<h2 key={index} className={`text-2xl font-bold ${headingColor} mt-8 mb-4 border-l-4 ${isDarkMode ? 'border-geek-primary' : 'border-blue-500'} pl-4`}>{trimmedLine.replace('## ', '')}</h2>);
-                continue;
-            }
-            if (trimmedLine.startsWith('# ')) {
-                elements.push(<h1 key={index} className={`text-3xl md:text-4xl font-bold ${headingColor} mt-12 mb-6`}>{trimmedLine.replace('# ', '')}</h1>);
-                continue;
-            }
-            if (trimmedLine.startsWith('- ')) {
-                elements.push(<li key={index} className={`ml-6 mb-2 ${textColor} list-disc`}>{parseInlineStyles(trimmedLine.replace('- ', ''))}</li>);
-                continue;
-            }
-            if (/^\d+\.\s/.test(trimmedLine)) {
-                const content = trimmedLine.replace(/^\d+\.\s/, '');
-                elements.push(<li key={index} className={`ml-6 mb-2 ${textColor} list-decimal`}>{parseInlineStyles(content)}</li>);
-                continue;
-            }
-            if (trimmedLine === '') {
-                elements.push(<div key={index} className="h-4" />);
-                continue;
-            }
-            elements.push(<p key={index} className={`${textColor} leading-loose mb-6 text-lg`}>{parseInlineStyles(line)}</p>);
-        }
-        return elements;
-    };
 
     return (
         <div className="max-w-3xl mx-auto">
@@ -177,10 +39,49 @@ const BlogDetailPage = () => {
                     <span>{article.date}</span>
                     <span>{article.author}</span>
                 </div>
+                <h1 className={`text-3xl md:text-5xl font-bold ${headingColor} leading-tight mb-8`}>
+                    {article.title}
+                </h1>
             </header>
 
-            <div className={`prose ${isDarkMode ? 'prose-invert' : ''} max-w-none`}>
-                {renderContent(article.content)}
+            <div className={`markdown-content ${isDarkMode ? 'dark' : ''}`}>
+                <ReactMarkdown
+                    components={{
+                        h1: ({ node, ...props }) => <h1 className={`text-3xl font-bold ${headingColor} mt-12 mb-6`} {...props} />,
+                        h2: ({ node, ...props }) => <h2 className={`text-2xl font-bold ${headingColor} mt-10 mb-4 border-l-4 ${isDarkMode ? 'border-geek-primary' : 'border-blue-500'} pl-4`} {...props} />,
+                        h3: ({ node, ...props }) => <h3 className={`text-xl font-bold ${headingColor} mt-8 mb-3`} {...props} />,
+                        p: ({ node, ...props }) => <p className={`${textColor} leading-loose mb-6 text-lg`} {...props} />,
+                        ul: ({ node, ...props }) => <ul className="ml-6 mb-6 space-y-2 list-disc" {...props} />,
+                        ol: ({ node, ...props }) => <ol className="ml-6 mb-6 space-y-2 list-decimal" {...props} />,
+                        li: ({ node, ...props }) => <li className={`${textColor}`} {...props} />,
+                        code: ({ node, inline, className, children, ...props }) => {
+                            return inline ? (
+                                <code className={`${isDarkMode ? 'bg-geek-border/50 text-geek-secondary' : 'bg-gray-100 text-purple-600'} px-1.5 py-0.5 rounded font-mono text-sm`} {...props}>
+                                    {children}
+                                </code>
+                            ) : (
+                                <div className={`my-6 rounded-lg overflow-hidden border ${borderColor}`}>
+                                    <pre className={`${isDarkMode ? 'bg-geek-bg/50' : 'bg-gray-50'} p-4 overflow-x-auto`}>
+                                        <code className={`text-sm font-mono ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`} {...props}>
+                                            {children}
+                                        </code>
+                                    </pre>
+                                </div>
+                            );
+                        },
+                        table: ({ node, ...props }) => (
+                            <div className="my-8 overflow-x-auto">
+                                <table className={`w-full border-collapse border ${borderColor} rounded-lg overflow-hidden`} {...props} />
+                            </div>
+                        ),
+                        th: ({ node, ...props }) => <th className={`border ${borderColor} px-4 py-2 text-left text-sm font-bold ${headingColor} ${isDarkMode ? 'bg-geek-border/30' : 'bg-gray-50'}`} {...props} />,
+                        td: ({ node, ...props }) => <td className={`border ${borderColor} px-4 py-2 text-sm ${textColor}`} {...props} />,
+                        strong: ({ node, ...props }) => <strong className={`${headingColor} font-bold`} {...props} />,
+                        a: ({ node, ...props }) => <a className={`${accentColor} hover:underline font-bold`} {...props} />
+                    }}
+                >
+                    {article.content}
+                </ReactMarkdown>
             </div>
 
             <footer className={`mt-20 pt-8 border-t ${borderColor} text-center`}>
