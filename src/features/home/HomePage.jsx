@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ToolCard from '../../components/ToolCard';
 import { phases } from '../../data/tools';
-import { articles } from '../../data/articles';
+import { getAllPosts } from '../../lib/blog';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
 import { useTheme } from '../../contexts/ThemeContext';
 import { SITE_CONFIG } from '../../config/site';
 
 const HomePage = () => {
     const { isDarkMode } = useTheme();
+    const articles = React.useMemo(() => getAllPosts(), []);
 
     useDocumentMeta({
         title: `${SITE_CONFIG.name} - ${SITE_CONFIG.title}`,
@@ -41,31 +42,28 @@ const HomePage = () => {
                 <div className="flex flex-wrap justify-center gap-3">
                     <Link
                         to="/tools"
-                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
-                            isDarkMode
-                                ? 'bg-geek-primary/10 text-geek-primary border border-geek-primary/30 hover:bg-geek-primary/20'
-                                : 'bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100'
-                        }`}
+                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${isDarkMode
+                            ? 'bg-geek-primary/10 text-geek-primary border border-geek-primary/30 hover:bg-geek-primary/20'
+                            : 'bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100'
+                            }`}
                     >
                         🚀 出海工具
                     </Link>
                     <Link
                         to="/exam"
-                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
-                            isDarkMode
-                                ? 'bg-geek-secondary/10 text-geek-secondary border border-geek-secondary/30 hover:bg-geek-secondary/20'
-                                : 'bg-purple-50 text-purple-600 border border-purple-200 hover:bg-purple-100'
-                        }`}
+                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${isDarkMode
+                            ? 'bg-geek-secondary/10 text-geek-secondary border border-geek-secondary/30 hover:bg-geek-secondary/20'
+                            : 'bg-purple-50 text-purple-600 border border-purple-200 hover:bg-purple-100'
+                            }`}
                     >
                         🧠 AI考试题库
                     </Link>
                     <Link
                         to="/blog"
-                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
-                            isDarkMode
-                                ? 'bg-geek-accent/10 text-geek-accent border border-geek-accent/30 hover:bg-geek-accent/20'
-                                : 'bg-pink-50 text-pink-600 border border-pink-200 hover:bg-pink-100'
-                        }`}
+                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${isDarkMode
+                            ? 'bg-geek-accent/10 text-geek-accent border border-geek-accent/30 hover:bg-geek-accent/20'
+                            : 'bg-pink-50 text-pink-600 border border-pink-200 hover:bg-pink-100'
+                            }`}
                     >
                         📝 技术博客
                     </Link>
@@ -77,7 +75,7 @@ const HomePage = () => {
                 <div className="flex justify-between items-end mb-8">
                     <div>
                         <h2 className={`text-3xl font-bold ${headingColor} mb-2 underline decoration-4 underline-offset-8 ${isDarkMode ? 'decoration-geek-secondary' : 'decoration-purple-500'}`}>
-                            最新深度指南
+                            最新博文
                         </h2>
                         <p className={`${subColor} font-mono text-sm`}>Deep Insights &amp; Strategy</p>
                     </div>

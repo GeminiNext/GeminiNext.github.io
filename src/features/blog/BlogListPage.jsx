@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { articles } from '../../data/articles';
+import { getAllPosts } from '../../lib/blog';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const BlogListPage = () => {
     const { isDarkMode } = useTheme();
+    const articles = useMemo(() => getAllPosts(), []);
 
     useDocumentMeta({
         title: '博客 - 独立开发 & AI 深度指南',
