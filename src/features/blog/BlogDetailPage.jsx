@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { getPostById } from '../../lib/blog';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
 import { useTheme } from '../../contexts/ThemeContext';
+import StaticDonation from '../../components/StaticDonation';
 
 const BlogDetailPage = () => {
     const { id } = useParams();
@@ -83,6 +84,8 @@ const BlogDetailPage = () => {
                     {article.content}
                 </ReactMarkdown>
             </div>
+
+            <StaticDonation />
 
             <footer className={`mt-20 pt-8 border-t ${borderColor} text-center`}>
                 <p className={`${subColor} text-sm mb-6 font-mono`}>

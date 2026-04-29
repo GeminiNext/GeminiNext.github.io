@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import ThemeToggle from '../../components/ThemeToggle';
 import questionBank from '../../data/question_bank_clean.json';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
+import DonationBox from '../../components/DonationBox';
 
 const ExamPage = () => {
     const navigate = useNavigate();
@@ -715,6 +716,8 @@ const ExamPage = () => {
                     </div>
                 </div>
             )}
+            {/* 功德箱 */}
+            <DonationBox />
         </div>
     );
 };
