@@ -23,7 +23,7 @@ async function generate() {
     }
 
     const template = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
-    const urls = [BASE_URL, `${BASE_URL}/about`, `${BASE_URL}/blog`, `${BASE_URL}/exam`, `${BASE_URL}/tools` ];
+    const urls = [BASE_URL, `${BASE_URL}/category`, `${BASE_URL}/blog`, `${BASE_URL}/tools`, `${BASE_URL}/about` ];
     const blogList = [];
 
     // 1. 先收集博文信息
@@ -62,6 +62,11 @@ async function generate() {
                 <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">${SITE_NAME}</h1>
                 <p style="font-size: 1.25rem; color: #9ca3af;">${SITE_DESC}</p>
             </header>
+            <section style="margin-bottom: 4rem;">
+                <h2 style="font-size: 1.5rem; border-bottom: 1px solid #374151; padding-bottom: 0.5rem; margin-bottom: 2rem;">人工智能训练师真题库</h2>
+                <p style="color: #d1d5db; margin-bottom: 1.5rem;">提供 190+ 人工智能训练师三级在线模拟考试真题，支持考试模式与刷题模式，助力专业认定。</p>
+                <a href="/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #3b82f6; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">进入考试系统 →</a>
+            </section>
             <section>
                 <h2 style="font-size: 1.5rem; border-bottom: 1px solid #374151; padding-bottom: 0.5rem; margin-bottom: 2rem;">最新文章 / Latest Posts</h2>
                 <ul style="list-style: none; padding: 0;">

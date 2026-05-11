@@ -5,8 +5,9 @@ import { SITE_CONFIG } from '../config/site';
 import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
+    { path: '/', label: 'AI考试', icon: '🧠' },
+    { path: '/category', label: '导航', icon: '🧭' },
     { path: '/blog', label: '博客', icon: '📝' },
-    { path: '/exam', label: 'AI考试', icon: '🧠' },
     { path: '/tools', label: '出海工具', icon: '🚀' },
 ];
 

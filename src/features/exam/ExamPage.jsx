@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import ThemeToggle from '../../components/ThemeToggle';
+import { useTheme } from '../../contexts/ThemeContext';
 import questionBank from '../../data/question_bank_clean.json';
 import useDocumentMeta from '../../hooks/useDocumentMeta';
 import DonationBox from '../../components/DonationBox';
@@ -22,11 +23,7 @@ const ExamPage = () => {
         }
     }, []);
 
-    // Initialize dark mode from localStorage, default to true
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        const saved = localStorage.getItem('examPageDarkMode');
-        return saved !== null ? JSON.parse(saved) : true;
-    });
+    const { isDarkMode } = useTheme();
     const [mode, setMode] = useState('exam'); // exam or practice
     const [examStatus, setExamStatus] = useState('intro'); // intro, in_progress, finished
     const [questions, setQuestions] = useState([]);
@@ -37,24 +34,6 @@ const ExamPage = () => {
     const [showOverview, setShowOverview] = useState(false);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [confirmCallback, setConfirmCallback] = useState(null);
-
-    // Listen to theme changes from ThemeToggle component
-    useEffect(() => {
-        const handleStorageChange = () => {
-            const saved = localStorage.getItem('examPageDarkMode');
-            if (saved !== null) {
-                setIsDarkMode(JSON.parse(saved));
-            }
-        };
-
-        window.addEventListener('storage', handleStorageChange);
-        window.addEventListener('theme-change', handleStorageChange);
-
-        return () => {
-            window.removeEventListener('storage', handleStorageChange);
-            window.removeEventListener('theme-change', handleStorageChange);
-        };
-    }, []);
 
     // Custom confirm handler
     const showConfirm = (callback) => {
@@ -328,12 +307,12 @@ const ExamPage = () => {
                             </>
                         )}
                         <Link
-                            to="/"
+                            to="/category"
                             className={`px-2 md:px-4 py-2 rounded-lg text-xs md:text-sm font-mono flex items-center gap-1 md:gap-2 ${buttonClasses}`}
-                            title="返回首页"
+                            title="所有分类导航"
                         >
-                            <span>🏠</span>
-                            <span className="hidden leading-none lg:inline">首页</span>
+                            <span>🧭</span>
+                            <span className="hidden leading-none lg:inline">导航</span>
                         </Link>
                         <Link
                             to="/exam/knowledge"
