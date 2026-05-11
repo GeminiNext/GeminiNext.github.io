@@ -31,8 +31,11 @@ function App() {
                 <Suspense fallback={<LoadingFallback />}>
                     <Routes>
                         {/* Main Layout routes (Navbar + Footer) */}
+                        <Route path="/" element={<ExamPage />} />
+
+                        {/* Main Layout routes (Navbar + Footer) */}
                         <Route element={<MainLayout />}>
-                            <Route path="/" element={<HomePage />} />
+                            <Route path="/category" element={<HomePage />} />
                             <Route path="/blog" element={<BlogListPage />} />
                             <Route path="/blog/:id" element={<BlogDetailPage />} />
                             <Route path="/tools" element={<ToolsPage />} />
@@ -44,6 +47,7 @@ function App() {
                         {/* Exam routes - standalone layout (own header/theme) */}
                         <Route path="/exam" element={<ExamPage />} />
                         <Route path="/exam/knowledge" element={<ExamKnowledgePage />} />
+                        <Route path="/knowledge" element={<ExamKnowledgePage />} />
                     </Routes>
                 </Suspense>
             </Router>
